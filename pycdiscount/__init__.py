@@ -19,12 +19,12 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 __author__ = "William G. Blondel <contact@williamblondel.me>"
-__version__ = "0.1"
+__version__ = "0.2"
 
 try:
     import requests
 except ImportError:
-    raise Exception("PyDiscount requires the requests library to work. http://docs.python-requests.org/")
+    raise Exception("PyDiscount requires the Requests library to work. http://docs.python-requests.org/")
 
 
 class PyCdiscountJobsError(Exception):
@@ -36,9 +36,6 @@ class PyCdiscountJobsError(Exception):
 
 
 class PyCdiscount:
-    def __init__(self, api_key):
-        self.api_key = api_key
-
     @staticmethod
     def __checkResponse(r):
         if r.status_code == 500:
@@ -47,6 +44,9 @@ class PyCdiscount:
             raise PyCdiscountJobsError(r.json()['Reason']['Text'])
         else:
             return r.json()
+
+    def __init__(self, api_key):
+        self.api_key = api_key
 
     def search(self, keyword, sortby="relevance", itemsperpage=10, pagenumber=0, pricemin=0, pricemax=0, category="all",
                marketplace=True, brands=None, condition="all"):
@@ -83,7 +83,8 @@ class PyCdiscount:
 
         return self.__checkResponse(r)
 
-    def getproduct(self, productid_list=None, ean_list=None, offers=True, associated_products=False, images=True, ean=True):
+    def getproduct(self, productid_list=None, ean_list=None, offers=True, associated_products=False, images=True,
+                   ean=True):
         if ean_list is None:
             ean_list = []
         if productid_list is None:
