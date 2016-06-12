@@ -8,6 +8,11 @@ PythonCdiscount requires Requests, an elegant and simple HTTP library for Python
 
 You also need a Cdiscount API key, which you can get from here : https://dev.cdiscount.com
 
+## Installation
+```
+pip install pycdiscount
+```
+
 ## Example Use
 ```python
 from pycdiscount import PyCdiscount

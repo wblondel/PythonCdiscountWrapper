@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pycdiscount',
-      version='0.3.1',
+      version='0.3.2',
       description='A simple Python Wrapper for CDiscount API using Requests.',
       url='https://github.com/wblondel/PythonCdiscountWrapper',
       author='William Gerald Blondel',
