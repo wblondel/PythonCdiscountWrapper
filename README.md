@@ -28,6 +28,6 @@ If you want to show them in the console, I suggest you use the pprint module.
 ## Questions, Comments, etc?
 Feel free to hit me up at the following:
 
-GitHub: (Where you're probably reading this) <br/>
+GitHub: https://github.com/wblondel <br/>
 Twitter: http://twitter.com/wgblondel <br/>
-Email: contact@williamblondel.me
+Email: contact@williamblondel.fr
