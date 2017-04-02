@@ -1,5 +1,5 @@
 # PythonCdiscount
-PythonCdiscount is a small wrapper around the Cdiscount (https://cdiscount.com) API.
+PythonCdiscount is a small wrapper around the [Cdiscount](https://cdiscount.com) [Products API](https://dev.cdiscount.com/home).
 
 ## Requirements
 PythonCdiscount requires Requests, an elegant and simple HTTP library for Python, built for human beings.
