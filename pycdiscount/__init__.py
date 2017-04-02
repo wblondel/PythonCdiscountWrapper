@@ -1,9 +1,9 @@
 # !/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# PythonCdiscount  Copyright (C) 2016    William Gerald Blondel
-# contact@williamblondel.me
-# Last modified 28th March 2016 8.18am
+# PythonCdiscount  Copyright (C) 2017    William Gerald Blondel
+# contact@williamblondel.fr
+# Last modified 2nd April 2017 12.56pm
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,8 +18,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-__author__ = "William G. Blondel <contact@williamblondel.me>"
-__version__ = "0.3.2"
+__author__ = "William Gerald Blondel <contact@williamblondel.fr>"
+__version__ = "0.3.5"
 
 try:
     import requests
